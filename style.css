@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right top, pink, rgba(255, 0, 0, 0.64));
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  text-align: center;
+  overflow: visible;
+  width: 400px;
+  height: 400px;
+}
+.text-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 40px;
+  padding-top: 120px;
+  line-height: 2em;
+  box-shadow: inset -4px -4px 0 10px white, inset 4px 4px 0 10px white;
+}
+.text-area h2 {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.text-area p {
+  font-size: 1.2rem;
+  color: rgba(239, 235, 235, 0.886);
+}
+.text-area a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.container .image-area {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  box-shadow: inset -4px -4px 0 10px rgb(255, 255, 255),
+    inset 4px 4px 0 10px rgba(255, 251, 251, 0.427);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 10px;
+  z-index: 10;
+  transform-origin: 95% 40%;
+  transition: all 0.3s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+  background-image: url("/image/dp.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.container .image-area:hover {
+  transform: rotate(-110deg);
+}
